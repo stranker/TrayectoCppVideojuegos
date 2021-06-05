@@ -41,6 +41,7 @@ struct Vector2 {
     Vector2 operator-(const Vector2& vector) {// Declaro que hace la funcion "-" para mi Vector2 
         return Vector2(x - vector.x, y - vector.y);
     };
+    int GetX() const { return x; };
     Vector2() {};
     Vector2(int _x, int _y) { x = _x; y = _y; };
     void Print() { cout << "Vector2(" << x << "," << y << ")" << endl; };
